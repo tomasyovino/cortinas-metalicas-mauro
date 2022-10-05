@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Source Code Pro', monospace;
+}
+
+:root {
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+    color: #E66C29;
+}
+
+/* Banner */
+
+.navbar-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.navbar-container .navbar-brand-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #6F614C;
+}
+
+.navbar-container .navbar-brand {
+    color: #F9EFC5;
+    width: 100%;
+    max-width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar-container .navbar-brand h3 {
+    font-weight: 500;
+}
+
+.navbar-container .navbar-brand div {
+    line-height: 1;
+    text-align: start;
+}
+
+.navbar-container .navbar-nav {
+    width: 100%;
+    text-align: center;
+    background-color: #F9EFC5;
+    padding: 10px;
+    border-bottom: 10px solid #261800;
+}
+
+.navbar-container .navbar-nav .nav-link {
+    padding: 5px;
+    transition: all .3s;
+}
+
+.navbar-container .navbar-nav .nav-link:hover {
+    font-weight: 600;
+}
+
+.navbar-container .navbar-nav .nav-link:nth-child(1) {
+    font-weight: 600;
+}
+
+.navbar-container .navbar-nav .nav-link:nth-child(2) {
+    border-left: solid 2px #E66C29;
+    border-right: solid 2px #E66C29;
+}
+
+.banner {
+    width: 100%;
+    min-height: 100vh;
+    background-image: url("./assets/img/bannerBackground.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    color: #F9EFC5;
+}
+
+.banner > h3 {
+    margin-top: 100px;
+    margin-bottom: 10px;
+    font-size: 26px;
+    color: #E66C29;
+}
+
+.banner span {
+    font-size: 20px;
+}
+
+.gallery {
+    margin-top: 100px;
+}
+
+.react-multi-carousel-list {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.react-multi-carousel-list button {
+    background-color: #261800c2;
+}
+
+.gallery img {
+    width: 225px;
+    height: 200px;
+    border: 7px solid #261800;
+    cursor: pointer;
+}

@@ -1,10 +1,11 @@
 import './App.css';
-import { Banner, About, Contact } from './components/exports';
+import { Banner, Services, About, Contact } from './components/exports';
 
 const App = () => {
   return (
     <>
       <Banner />
+      <Services />
       <About />
       <Contact />
     </>
