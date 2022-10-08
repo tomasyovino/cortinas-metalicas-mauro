@@ -1,14 +1,26 @@
-import React from 'react'
+import { Container } from "react-bootstrap";
 
 const About = () => {
   return (
-    <div id='about'>
-        <img src='' alt='logo' />
-        <div>
-            <h3>Sobre Nosotros</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut mattis vulputate mi vel cursus. Cras ut est vel nisl pulvinar auctor. Praesent pulvinar ligula ipsum, nec mollis lacus consequat eget. Aenean tincidunt, ante ac finibus pharetra, eros eros gravida ex, non rutrum nibh quam a dui. Fusce blandit in dui vitae rhoncus. In pulvinar felis at ex consectetur, efficitur porttitor est varius. Integer et blandit velit, in luctus ante. Maecenas sit amet sapien vitae ante commodo tincidunt sed et ipsum. Vestibulum ut erat bibendum, blandit orci at, sollicitudin sem. Suspendisse potenti. Sed sollicitudin ullamcorper fermentum. Praesent nec pellentesque ex. Duis quis varius magna.</p>
-        </div>
-    </div>
+    <section id='about'>
+      <Container>
+        <Container>
+          <h3>Who we are</h3>
+          <h4>A subheading about who we are</h4>
+          <img src="" alt="who we are" />
+          <p>Duis neque nisi, dapibus sed mattis quis, rutrum accumsan magna sed. Suspendisse eu varius nibh. Suspendisse vitae magna eget odio amet mollis justo facilisis quis. Sed sagittis amet lorem ipsum.</p>
+        </Container>
+        <Container>
+          <h3>What we do</h3>
+          <h4>A subheading about what we do</h4>
+          <ul>
+            <li>Fabricación de cortinas nuevas</li>
+            <li>Reparaciones</li>
+            <li>Bobinados de motores</li>
+          </ul>
+        </Container>
+      </Container>
+    </section>
   )
 }
 

@@ -1,24 +1,20 @@
-import { Container, Navbar, Nav } from "react-bootstrap";
-import logo from "../assets/img/logo.png";
+import { Container, Row, Navbar, Nav } from "react-bootstrap";
 
 const NavBar = () => {
   return (
-    <Navbar expand="lg" id="navbar">
-      <Container className="navbar-container">
-        <Container className="navbar-brand-container">
-          <Navbar.Brand href="#home" className="logo">
-            <img src={logo} alt="logo" style={{width: "100px", height: "auto"}} />
-            <div>
-              <h3>CORTINAS METALICAS</h3>
-              <h3>MAURO</h3>
-            </div>
-          </Navbar.Brand>
-        </Container>
-        <Nav className="me-auto">
-          <Nav.Link href="#home">INICIO</Nav.Link>
-          <Nav.Link href="#about">SOBRE NOSOTROS</Nav.Link>
-          <Nav.Link href="#contact">CONTACTO</Nav.Link>
-        </Nav>
+    <Navbar collapseOnSelect expand="lg" id="navbar">
+      <Container>
+        <Row>
+          <Navbar.Brand href="#home" id="logo"><h1>Cortinas Metálicas Mauro</h1></Navbar.Brand>
+          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+          <Navbar.Collapse>
+            <Nav>
+              <Nav.Link href="#home">Inicio</Nav.Link>
+              <Nav.Link href="#about">Sobre Nosotros</Nav.Link>
+              <Nav.Link href="#contact">Contacto</Nav.Link>
+            </Nav>
+          </Navbar.Collapse>
+        </Row>
       </Container>
     </Navbar>
   )

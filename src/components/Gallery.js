@@ -1,3 +1,4 @@
+import { Container } from "react-bootstrap";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import img1 from "../assets/img/gallery1.webp";
@@ -23,16 +24,21 @@ const Gallery = () => {
     },
     mobile: {
         breakpoint: { max: 600, min: 0 },
-        items: 2
+        items: 1
     }
   };
 
   return (
-    <div className='gallery'>
-      <div>
+    <section id='gallery'>
+      <Container>
         <Carousel 
           responsive={responsive} 
           infinite={true}
+          centerMode={true}
+          autoPlay={true}
+          arrows={false}
+          customTransition="1000ms ease-in-out"
+          transitionDuration={1000}
         >
           {
             galleryData.map(data => (
@@ -40,8 +46,8 @@ const Gallery = () => {
             ))
           }
         </Carousel>
-      </div>
-    </div>
+      </Container>
+    </section>
   )
 }
 

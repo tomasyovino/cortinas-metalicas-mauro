@@ -1,11 +1,12 @@
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
-import { Banner, Services, About, Contact } from './components/exports';
+import { Home, Gallery, About, Contact } from './components/exports';
 
 const App = () => {
   return (
     <>
-      <Banner />
-      <Services />
+      <Home />
+      <Gallery />
       <About />
       <Contact />
     </>
