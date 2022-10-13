@@ -1,6 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
-import { Home, Gallery, About, Contact } from './components/exports';
+import { Home, Gallery, About, Contact, Footer } from './components/exports';
 
 const App = () => {
   return (
@@ -9,6 +9,7 @@ const App = () => {
       <Gallery />
       <About />
       <Contact />
+      <Footer />
     </>
   );
 };

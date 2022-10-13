@@ -21,7 +21,7 @@ const Home = () => {
     <section id="header">
       <NavBar />
       <Banner />
-      <a href="#wpp">
+      <a href="https://wa.me/5491150521731" target="_blank" rel="noreferrer">
         <img src={socialIcon} alt="Contáctanos" className="socialIcon" style={{ right: showSocialIcon ? "20px" : "-100px" }}/>
       </a>
     </section>
