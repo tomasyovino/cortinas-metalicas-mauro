@@ -8,7 +8,7 @@ const Banner = () => {
         <Row>
           <div className="left">
               <p>Fabricación, venta y reparación de cortinas metálicas.</p>
-              <Button href="#about" size="lg" variant="danger">SERVICIOS</Button>
+              <Button href="#services" size="lg" variant="danger">SERVICIOS</Button>
           </div>
           <div className="right">
             <img src={img1} alt="Cortina Metálica" />

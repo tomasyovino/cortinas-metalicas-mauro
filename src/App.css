@@ -50,6 +50,16 @@ body {
     flex-grow: unset;
 }
 
+#navbar .container .row button {
+    width: 50px;
+    height: 50px;
+    padding: 0;
+}
+
+#navbar .container .row button:focus {
+    box-shadow: none;
+}
+
 #navbar h1 {
     font-size: 44px;
     font-weight: 300;
@@ -304,4 +314,65 @@ body {
     border-radius: 25px;
     border: none;
     outline: none;
+}
+
+#footer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 45px;
+    color: #546b76;
+    text-align: start;
+    text-shadow: 1px 1px 0px rgb(255 255 255 / 50%);
+}
+
+#footer span {
+    width: 100%;
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* 1280 920 736 464 */
+@media (max-width: 920px) {
+    #header .socialIcon {
+        width: 60px;
+        height: auto;
+        position: fixed;
+        bottom: 20px;
+        z-index: 999;
+        transition: ease-in-out .5s;
+    }
+
+    #banner .container .row {
+        flex-direction: column-reverse;
+        gap: 60px;
+        text-align: center;
+    }
+
+    #banner .row .right, #banner .row .left {
+        width: 100%;
+    }
+
+    #banner .row .left p {
+        padding-right: 0;
+    }
+
+    #gallery img {
+        width: 160px;
+        height: 150px;
+    }
+
+    #about > .features-container {
+        gap: 0;
+    }
+
+    #footer div {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 736px) {
+    #banner .container .row {
+        flex-direction: column;
+    }
 }

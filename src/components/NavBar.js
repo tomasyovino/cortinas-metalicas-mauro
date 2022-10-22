@@ -8,7 +8,7 @@ const NavBar = () => {
           <Navbar.Brand href="#home" id="logo"><h1>Cortinas Metálicas Mauro</h1></Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse>
-            <Nav>
+            <Nav className="me-auto">
               <Nav.Link href="#home">Inicio</Nav.Link>
               <Nav.Link href="#about">Sobre Nosotros</Nav.Link>
               <Nav.Link href="#contact">Contacto</Nav.Link>

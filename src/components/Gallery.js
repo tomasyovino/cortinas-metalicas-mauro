@@ -11,7 +11,7 @@ import img6 from "../assets/img/gallery6.webp";
 const Gallery = () => {
   const responsive = {
     superLargeDesktop: {
-        breakpoint: { max:4000, min: 3000 },
+        breakpoint: { max: 4000, min: 3000 },
         items: 3
     },
     desktop: {

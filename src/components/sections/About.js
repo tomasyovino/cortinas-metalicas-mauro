@@ -20,7 +20,7 @@ const About = () => {
         <Container className="features">
           <h3>What we do</h3>
           <h4>A subheading about what we do</h4>
-          <div className="services">
+          <div className="services" id="services">
             <button
               onClick={() => setOpen(!open)}
             >
