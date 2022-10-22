@@ -40,6 +40,7 @@ body {
 #navbar .row {
     width: 100%;
     justify-content: space-between;
+    /* flex-wrap: nowrap; */
 }
 
 #navbar .row>* {
@@ -218,6 +219,7 @@ body {
     font-size: 20px;
     line-height: 1.5;
     margin-top: 20px;
+    color: #000;
 }
 
 #about .features-container .features .services {
@@ -238,6 +240,7 @@ body {
 
 #about .features-container .features span {
     font-size: 26px;
+    text-align: start;
 }
 
 #about .features-container .features .collapse-text {
@@ -332,7 +335,6 @@ body {
     font-family: 'Times New Roman', Times, serif;
 }
 
-/* 1280 920 736 464 */
 @media (max-width: 920px) {
     #header .socialIcon {
         width: 60px;
@@ -372,7 +374,49 @@ body {
 }
 
 @media (max-width: 736px) {
+    #navbar .row {
+        width: 100vw;
+        justify-content: space-around;
+    }
+
+    #navbar #logo {
+        margin-right: 0;
+    }
+
+    #navbar .navbar-collapse {
+        width: 100%;
+    }
+
+    #navbar .navbar-nav a{
+        margin-left: 40px;
+    }
+
     #banner .container .row {
         flex-direction: column;
+    }
+}
+
+@media (max-width: 464px) {
+    #navbar #logo {
+        width: 100%;
+        text-align: center;
+        margin-right: 0;
+    }
+
+    #navbar h1 {
+        font-size: 40px;
+    }
+
+    #navbar .container .row button {
+        margin-left: 20px;
+        margin-bottom: 20px;
+    }
+
+    #navbar .navbar-collapse {
+        width: 100%;
+    }
+
+    #navbar .navbar-nav a{
+        margin-left: 40px;
     }
 }

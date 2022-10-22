@@ -11,15 +11,15 @@ const About = () => {
     <section id='about'>
       <Container className="features-container">
         <Container className="features">
-          <h3>Who we are</h3>
-          <h4>A subheading about who we are</h4>
+          <h3>Sobre Nosotros</h3>
+          <h4>Expertos en cortinas metálicas</h4>
           <div className="aboutImg" />
-          <p>Duis neque nisi, dapibus sed mattis quis, rutrum accumsan magna sed. Suspendisse eu varius nibh. Suspendisse vitae magna eget odio amet mollis justo facilisis quis. Sed sagittis amet lorem ipsum.</p>
+          <p>Somos una empresa argentina dedicada fundamentalmente a la fabricación y colocación de cortinas metálicas. Ofrecemos nuestros servicios desde hace más de 15 años, brindando al cliente la mejor atención y calidad.</p>
         </Container>
 
         <Container className="features">
-          <h3>What we do</h3>
-          <h4>A subheading about what we do</h4>
+          <h3>Servicios</h3>
+          <h4>¡Calidad precio inigualable!</h4>
           <div className="services" id="services">
             <button
               onClick={() => setOpen(!open)}
@@ -29,9 +29,7 @@ const About = () => {
             </button>
             <Collapse in={open}>
               <div className="collapse-text">
-                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus
-                terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer
-                labore wes anderson cred nesciunt sapiente ea proident.
+                <p>Armados de cortinas metálicas, de diferentes tipos de chapas y espesor.</p>
               </div>
             </Collapse>
 
@@ -43,9 +41,14 @@ const About = () => {
             </button>
             <Collapse in={open2}>
               <div className="collapse-text">
-                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus
-                terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer
-                labore wes anderson cred nesciunt sapiente ea proident.
+                <p>Reparaciones en general y se realizan de forma inmediata durante el mismo día.</p>
+                <p>Cambios de:</p>
+                <ul>
+                  <li>Taquillas.</li>
+                  <li>Ejes.</li>
+                  <li>Motores.</li>
+                  <li>Puertas de escape.</li>
+                </ul>
               </div>
             </Collapse>
 
@@ -57,9 +60,7 @@ const About = () => {
             </button>
             <Collapse in={open3}>
               <div className="collapse-text">
-                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus
-                terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer
-                labore wes anderson cred nesciunt sapiente ea proident.
+                <p>Se hacen bobinados de motores nacionales.</p>
               </div>
             </Collapse>
           </div>
